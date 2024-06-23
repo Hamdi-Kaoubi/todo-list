@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="biggest-parent" id="biggest-parent">
+        <div class="header">
+            <div class="header-content">
+                <h1 class="title">مهامي</h1>
+                <button class="add-btn" id="button">+</button>
+            </div>
+        </div>
+        <div class="main-container" id="main-container"></div>
+        <!-- <div class="main-div" id="main">
+            <div class="mission-text">
+                <h2>قرائة كتاب</h2>
+                    <div>
+                        <span>10/20/2024</span>
+                        <span class="material-symbols-outlined">calendar_month</span>
+                    </div>
+            </div>
+            <div class="icons">
+                <span id="deleted" class="material-symbols-outlined" style="background-color: #FF0000;">delete</span>
+                <span id="finished" class="material-symbols-outlined" style="background-color: #059212;">check</span>
+                <span id="edited" class="material-symbols-outlined" style="background-color: #FFC700;">edit</span>
+            </div>
+        </div> -->
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2>الرجاء ادخال عنوان المهمة</h2>
+            <input id="mission-input" type="text" style="width: 90%; padding: 10px;">
+            <div style="display:flex; gap: 10px;">
+                <button class="btn" id="giveup-button" style="background-color: crimson;">الغاء</button>
+                <button class="btn" id="mission-button" style="background-color: #003285;">اضافة</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="update-modal">
+        <div class="modal-content">
+            <h2>تعديل المهمة</h2>
+            <input id="update-input" type="text" style="width: 90%; padding: 10px;">
+            <div style="display:flex; gap: 10px;">
+                <button class="btn" id="giveup-button" style="background-color: crimson;">الغاء</button>
+                <button class="btn" id="edit-button" style="background-color: #FFC700;">تعديل</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
